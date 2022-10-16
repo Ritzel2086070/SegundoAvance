@@ -1,0 +1,980 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Español (México) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ESM)
+LANGUAGE LANG_SPANISH, SUBLANG_SPANISH_MEXICAN
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IS_CB_Comercio DIALOGEX 0, 0, 367, 221
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Inicio de Sesión"
+FONT 10, "Century Gothic", 400, 0, 0x0
+BEGIN
+    RTEXT           "Comercio:",IDC_STATIC,99,51,44,8
+    RTEXT           "Nombre de Usuario:",IDC_STATIC,69,66,74,8
+    EDITTEXT        IDC_EDIT2,147,66,126,14,ES_AUTOHSCROLL
+    RTEXT           "Contraseña:",IDC_STATIC,69,84,74,8
+    EDITTEXT        IDC_EDIT3,147,84,126,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Iniciar Sesión",IDC_B_IS_IniciarSesion,136,111,78,14
+    PUSHBUTTON      "Registrar Usuario",IDC_B_IS_RegistrarUsuario,136,129,78,14
+    PUSHBUTTON      "Salir",IDC_B_IS_Salir,136,147,78,14
+    COMBOBOX        IDC_CB_IS_Comercio,147,50,126,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_D_RegistroAdmin DIALOGEX 0, 0, 219, 124
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Registro de Usuario Administrador"
+FONT 10, "Century Gothic", 400, 0, 0x0
+BEGIN
+    CONTROL         "Registro de Administrador",IDC_S_RA,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,6,6,86,8
+    RTEXT           "Comercio:",IDC_S_RAC,54,30,36,8
+    RTEXT           "Nombre de Usuario:",IDC_S_RANdU,18,48,72,8
+    RTEXT           "Contraseña:",IDC_S_RAcontra,18,66,72,8
+    EDITTEXT        IDC_E_RU_Comercio,102,30,84,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_RU_NdUsuario,102,48,84,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_RU_Contra,102,66,84,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Registrar Usuario",IDC_B_RA_RegistrarUsuario,30,90,66,14
+    PUSHBUTTON      "Regresar",IDC_B_RA_Regresar,108,90,66,14
+END
+
+IDD_D_VPantallaPrincipal DIALOGEX 0, 0, 551, 282
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "1. Pantalla Principal"
+FONT 10, "Century Gothic", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Información Disponible",IDC_SB_PP_InformacionDIsponible,7,7,178,156
+    GROUPBOX        "Cantidad de clientes:",IDC_SB_VPP_CantidadClientes,12,19,167,22
+    LTEXT           "Cantidad",IDC_S_VPP_CantidadClientes,76,29,34,8
+    GROUPBOX        "Cantidad de promociones activas:",IDC_SB_VPP_CantidadPromociones,11,47,168,22
+    LTEXT           "Cantidad",IDC_S_VPP_CantidadPromociones,77,57,34,8
+    GROUPBOX        "Cantidad de promociones inactivas:",IDC_SB_VPP_CantidadPromocionesInA,11,77,168,22
+    LTEXT           "Cantidad",IDC_S_VPP_CantidadPromocionesInA,77,87,34,8
+    GROUPBOX        "Cantidad de consumos totales:",IDC_SB_VPP_CantidadConsumos,11,107,168,22
+    GROUPBOX        "Monto total de consumo de todos los clientes:",IDC_SB_VPP_CantidadConsumos2,11,137,168,22
+    LTEXT           "Cantidad",IDC_S_VPP_CantidadConsumos,77,116,34,8
+    LTEXT           "Cantidad",IDC_S_VPP_CantidadConsumosTotales,77,146,34,8
+END
+
+IDD_D_ActualizarUsuario DIALOGEX 0, 0, 321, 106
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actualizar Usuario"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Actualizar Usuario",IDC_S_AU_Titulo,6,6,61,8
+    LTEXT           "Nombre Completo:",IDC_S_AU_NCompleto,14,24,67,8
+    LTEXT           "Alias del Usuario:",IDC_S_AU_AUsuario,23,42,57,8
+    LTEXT           "Foto:",IDC_S_AU_Foto,62,59,18,8
+    EDITTEXT        IDC_E_AU_NombreCompleto,86,24,120,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AU_AliasUsuario,86,42,120,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Guardar",IDC_B_AU_Guardar,114,84,50,14
+    PUSHBUTTON      "Regresar",IDC_B_AU_Regresar,178,84,50,14
+    CONTROL         "",IDC_PC_IS_FotoUsu,"Static",SS_BITMAP,216,6,9,8
+    PUSHBUTTON      "Subir Fotografía",IDC_B_AU_SubirFoto,86,59,76,14
+END
+
+IDD_D_AltaAdmin DIALOGEX 200, 0, 219, 160
+STYLE DS_SYSMODAL | DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta de Nuevo Administrador"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de Nuevo Administrador:",IDC_S_A_TituloNuevoAdmin,12,6,127,8
+    LTEXT           "Nombre de Usuario:",IDC_S_A_NombreUsu,24,25,67,8
+    LTEXT           "Nombre Completo:",IDC_S_A_NombreCompleto,24,43,67,8
+    LTEXT           "Alias:",IDC_S_A_Alias,72,62,19,8
+    LTEXT           "Contraseña:",IDC_S_A_Contra,48,80,43,8
+    LTEXT           "Comercio:",IDC_S_A_Comercio,55,99,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_A_TipoUsu,30,116,60,8
+    EDITTEXT        IDC_E_NA_NombreUsuario,96,24,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NA_NombreCompleto,96,42,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NA_Alias,96,60,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NA_Contra,96,78,108,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NA_Comercio,96,97,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_NA_Guardar,50,131,50,14
+    PUSHBUTTON      "Regresar",IDC_B_NA_Regresar,115,131,50,14
+    CONTROL         "Administrador",IDC_RB_NA_Administrador,"Button",BS_AUTORADIOBUTTON,96,115,64,10
+    CONTROL         "Cajero",IDC_RB_NA_Cajero,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,168,115,39,10
+END
+
+IDD_D_AltaCajero DIALOGEX 200, 0, 219, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta de Nuevo Cajero"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de Nuevo Cajero:",IDC_S_C_TituloNuevoCajero,6,5,102,8
+    LTEXT           "Nombre de Usuario:",IDC_S_C_NombreUsu,18,24,67,8
+    LTEXT           "Nombre Completo:",IDC_S_C_NombreCompleto,18,42,67,8
+    LTEXT           "Alias:",IDC_S_C_Alias,66,61,19,8
+    LTEXT           "Contraseña:",IDC_S_C_Contra,42,79,43,8
+    LTEXT           "Comercio:",IDC_S_C_Comercio,49,98,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_C_TipoUsu,24,115,60,8
+    EDITTEXT        IDC_E_NC_NombreUsuario,90,23,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NC_NombreCompleto,90,41,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NC_Alias,90,59,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NC_Contra,90,77,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NC_Comercio,90,96,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_NC_Guardar,60,137,50,14
+    PUSHBUTTON      "Regresar",IDC_B_NC_Regresar,125,137,50,14
+    CONTROL         "Administrador",IDC_RB_NC_Administrador,"Button",BS_AUTORADIOBUTTON | WS_DISABLED,90,114,64,10
+    CONTROL         "Cajero",IDC_RB_NC_Cajero,"Button",BS_AUTORADIOBUTTON,162,114,39,10
+END
+
+IDD_D_ListadoAdmin DIALOGEX 200, 0, 319, 184
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_A_Lista,7,8,114,168,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Información del Usuario Seleccionado:",ID_S_LA_TituloInfoAdmiN,150,14,130,8
+    LTEXT           "Nombre de Usuario:",IDC_S_LA_NombreUsu,126,33,67,8
+    LTEXT           "Nombre Completo:",IDC_S_LA_NombreCompleto,126,51,67,8
+    LTEXT           "Alias:",IDC_S_LA_Alias,174,70,19,8
+    LTEXT           "Contraseña:",IDC_S_LA_Contra,150,88,43,8
+    LTEXT           "Comercio:",IDC_S_LA_Comercio,157,107,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_LA_TipoUsu,132,124,60,8
+    EDITTEXT        IDC_E_LA_NombreUsuario,198,32,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LA_NombreCompleto,198,50,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LA_Alias,198,68,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LA_Contra,198,86,108,12,ES_PASSWORD | ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LA_Comercio,198,105,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LA_TipoUsu,198,122,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Actualizar",IDC_B_LA_Actualizar,134,148,50,14
+    PUSHBUTTON      "Eliminar",IDC_B_LA_Eliminar,192,148,50,14
+    PUSHBUTTON      "Regresar",IDC_B_LA_Regresar,249,148,50,14
+END
+
+IDD_D_ListaCajeros DIALOGEX 200, 0, 310, 183
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_C_Lista,4,8,114,168,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Información del Usuario Seleccionado:",ID_S_LC_TituloInfoAdmiN,148,23,130,8
+    LTEXT           "Nombre de Usuario:",IDC_S_LC_NombreUsu,124,42,67,8
+    LTEXT           "Nombre Completo:",IDC_S_LC_NombreCompleto,124,60,67,8
+    LTEXT           "Alias:",IDC_S_LC_Alias,172,79,19,8
+    LTEXT           "Contraseña:",IDC_S_LC_Contra,148,97,43,8
+    LTEXT           "Comercio:",IDC_S_LC_Comercio,155,116,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_LC_TipoUsu,130,133,60,8
+    EDITTEXT        IDC_E_LC_NombreUsuario,196,41,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LC_NombreCompleto,196,59,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LC_Alias,196,77,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LC_Contra,196,95,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LC_Comercio,196,114,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LC_TipoUsu,196,131,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Actualizar",IDC_B_LC_Actualizar,129,149,50,14
+    PUSHBUTTON      "Eliminar",IDC_B_LC_Eliminar,187,149,50,14
+    PUSHBUTTON      "Regresar",IDC_B_LC_Regresar,244,149,50,14
+END
+
+IDD_D_BajaAdmin DIALOGEX 0, 0, 195, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baja de Administrador"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información del Usuario Seleccionado:",ID_S_BA_TituloInfoAdmiN,30,6,130,8
+    LTEXT           "Nombre de Usuario:",IDC_S_BA_NombreUsu,6,25,67,8
+    LTEXT           "Nombre Completo:",IDC_S_BA_NombreCompleto,6,43,67,8
+    LTEXT           "Alias:",IDC_S_BA_Alias,54,62,19,8
+    LTEXT           "Contraseña:",IDC_S_BA_Contra,30,80,43,8
+    LTEXT           "Comercio:",IDC_S_BA_Comercio,37,99,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_BA_TipoUsu,12,116,60,8
+    EDITTEXT        IDC_E_BA_NombreUsuario,78,24,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BA_NombreCompleto,78,42,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BA_Alias,78,60,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BA_Contra,78,78,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BA_Comercio,78,97,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BA_TipoUsu,78,114,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Eliminar",IDC_B_BA_Eliminar,39,132,50,14
+    PUSHBUTTON      "Regresar",IDC_B_BA_Regresar,96,132,50,14
+END
+
+IDD_D_BajaCajero DIALOGEX 0, 0, 195, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baja de Cajero"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información del Usuario Seleccionado:",ID_S_BC_TituloInfoAdmiN,30,6,130,8
+    LTEXT           "Nombre de Usuario:",IDC_S_BC_NombreUsu,6,25,67,8
+    LTEXT           "Nombre Completo:",IDC_S_BC_NombreCompleto,6,43,67,8
+    LTEXT           "Alias:",IDC_S_BC_Alias,54,62,19,8
+    LTEXT           "Contraseña:",IDC_S_BC_Contra,30,80,43,8
+    LTEXT           "Comercio:",IDC_S_BC_Comercio,37,99,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_BC_TipoUsu,12,116,60,8
+    EDITTEXT        IDC_E_BC_NombreUsuario,78,24,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BC_NombreCompleto,78,42,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BC_Alias,78,60,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BC_Contra,78,78,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BC_Comercio,78,96,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BC_TipoUsu,78,114,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Eliminar",IDC_B_BC_Eliminar,39,132,50,14
+    PUSHBUTTON      "Regresar",IDC_B_BC_Regresar,96,132,50,14
+END
+
+IDD_D_ActualizarAdmin DIALOGEX 0, 0, 367, 164
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actualizar Información de Administrador"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de Administrador:",IDC_S_AA_TituloNuevoAdmin,145,8,104,8
+    LTEXT           "Nombre de Usuario:",IDC_S_AA_NombreUsu,175,27,67,8
+    LTEXT           "Nombre Completo:",IDC_S_AA_NombreCompleto,175,45,67,8
+    LTEXT           "Alias:",IDC_S_AA_Alias,223,64,19,8
+    LTEXT           "Reestablecer Contraseña:",IDC_S_AA_Contra,151,82,90,8
+    LTEXT           "Comercio:",IDC_S_AA_Comercio,206,101,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_AA_TipoUsu,181,118,60,8
+    EDITTEXT        IDC_E_AA_NombreUsuario,247,26,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AA_NombreCompleto,247,44,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AA_Alias,247,62,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AA_Contra,247,80,108,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AA_Comercio,247,99,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_AA_TipoUsu,247,117,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_AA_Guardar,200,137,50,14
+    PUSHBUTTON      "Regresar",IDC_B_AA_Regresar,265,137,50,14
+    LISTBOX         IDC_L_AA_ListaUsuarios,7,7,130,150,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_D_ActualizarCajero DIALOGEX 0, 0, 373, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actualizar Información de Cajero"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de Cajero:",IDC_S_AC_TituloNuevoAdmin,155,8,79,8
+    LTEXT           "Nombre de Usuario:",IDC_S_AC_NombreUsu,180,27,67,8
+    LTEXT           "Nombre Completo:",IDC_S_AC_NombreCompleto,180,45,67,8
+    LTEXT           "Alias:",IDC_S_AC_Alias,228,64,19,8
+    LTEXT           "Reestablecer Contraseña:",IDC_S_AC_Contra,156,82,90,8
+    LTEXT           "Comercio:",IDC_S_AC_Comercio,211,101,36,8
+    RTEXT           "Tipo de Usuario:",IDC_S_AC_TipoUsu,186,118,60,8
+    EDITTEXT        IDC_E_AC_NombreUsuario,252,26,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AC_NombreCompleto,252,44,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AC_Alias,252,62,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AC_Contra,252,80,108,12,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AC_Comercio,252,99,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_AC_TipoUsu,252,117,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_AC_Guardar,195,137,50,14
+    PUSHBUTTON      "Regresar",IDC_B_AC_Regresar,260,137,50,14
+    LISTBOX         IDC_L_AC_ListaCajeros,7,7,138,146,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_D_AltaCliente DIALOGEX 0, 0, 213, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta de Nuevo Cliente"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de Nuevo Cliente:",IDC_S_c_TituloNuevoCliente,7,4,104,8
+    LTEXT           "Nombre Completo:",IDC_S_cliente_NombreCompleto,19,20,67,8
+    LTEXT           "Alias:",IDC_S_cliente_Alias,67,39,19,8
+    LTEXT           "Teléfono:",IDC_S_cliente_Telefono,55,57,31,8
+    LTEXT           "Comercio:",IDC_S_cliente_Comercio,50,93,36,8
+    EDITTEXT        IDC_E_Ncliente_NombreCompleto,91,19,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_Ncliente_Alias,91,37,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_Ncliente_Telefono,91,55,108,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_E_Ncliente_Comercio,91,91,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_Ncliente_Guardar,45,135,50,14
+    PUSHBUTTON      "Regresar",IDC_B_Ncliente_Regresar,110,135,50,14
+    LTEXT           "Email:",IDC_S_cliente_Email,65,75,21,8
+    EDITTEXT        IDC_E_Ncliente_Email,91,73,108,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DTP_cliente_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,91,110,107,15
+    LTEXT           "Fecha:",IDC_S_cliente_Fecha,62,112,24,8
+END
+
+IDD_D_BajaClientes DIALOGEX 0, 0, 207, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baja de Cliente"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información del Cliente:",IDC_S_c_TituloBajaCliente,7,5,83,8
+    LTEXT           "Nombre Completo:",IDC_S_Bcliente_NombreCompleto,17,19,67,8
+    LTEXT           "Alias:",IDC_S_Bcliente_Alias,65,38,19,8
+    LTEXT           "Teléfono:",IDC_S_Bcliente_Telefono,53,56,31,8
+    LTEXT           "Comercio:",IDC_S_Bcliente_Comercio,48,92,36,8
+    EDITTEXT        IDC_E_Bcliente_NombreCompleto,89,18,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_Bcliente_Alias,89,36,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_Bcliente_Telefono,89,54,108,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_E_Bcliente_Comercio,89,90,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Eliminar",IDC_B_Bcliente_Eliminar,43,134,50,14
+    PUSHBUTTON      "Regresar",IDC_B_Bcliente_Regresar,108,134,50,14
+    LTEXT           "Email:",IDC_S_Bcliente_Email,63,74,21,8
+    EDITTEXT        IDC_E_Bcliente_Email,89,72,108,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_DTP_Bcliente_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,89,109,107,15
+    LTEXT           "Fecha:",IDC_S_Bcliente_Fecha,60,111,24,8
+END
+
+IDD_D_ListaClientes DIALOGEX 200, 0, 311, 182
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_cli_Lista,4,7,114,168,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Información del Cliente Seleccionado:",ID_S_lc_TituloInfoCliente,148,16,131,8
+    LTEXT           "Nombre Completo:",IDC_S_lcliente_NombreCompleto,123,35,67,8
+    LTEXT           "Alias:",IDC_S_lcliente_Alias,171,54,19,8
+    LTEXT           "Teléfono:",IDC_S_lcliente_Telefono,159,72,31,8
+    LTEXT           "Comercio:",IDC_S_lcliente_Comercio,154,108,36,8
+    EDITTEXT        IDC_E_Lcliente_NombreCompleto,195,34,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_Lcliente_Alias,195,52,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_Lcliente_Telefono,195,70,108,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_E_Lcliente_Comercio,195,106,108,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Email:",IDC_S_lcliente_Email,169,90,21,8
+    EDITTEXT        IDC_E_Lcliente_Email,195,88,108,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_DTP_lcliente_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,195,125,107,15
+    LTEXT           "Fecha:",IDC_S_lcliente_Fecha,166,127,24,8
+    PUSHBUTTON      "Actualizar",IDC_B_Lclientes_Actualizar,129,149,50,14
+    PUSHBUTTON      "Eliminar",IDC_B_Lclientes_Eliminar,187,149,50,14
+    PUSHBUTTON      "Regresar",IDC_B_Lclientes_Regresar,244,149,50,14
+END
+
+IDD_D_ActualizarCliente DIALOGEX 0, 0, 339, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actualizar Cliente"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_L_ac_ListaClientes,6,4,138,146,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nombre Completo:",IDC_S_acliente_NombreCompleto,151,22,67,8
+    LTEXT           "Alias:",IDC_S_acliente_Alias,199,41,19,8
+    LTEXT           "Teléfono:",IDC_S_acliente_Telefono,187,59,31,8
+    LTEXT           "Comercio:",IDC_S_acliente_Comercio,182,95,36,8
+    EDITTEXT        IDC_E_Acliente_NombreCompleto,223,21,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_Acliente_Alias,223,39,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_Acliente_Telefono,223,57,108,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_E_Acliente_Comercio,223,93,108,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Guardar",IDC_B_Acliente_Guardar,177,133,50,14
+    PUSHBUTTON      "Regresar",IDC_B_Acliente_Regresar,242,133,50,14
+    LTEXT           "Email:",IDC_S_acliente_Email,197,77,21,8
+    EDITTEXT        IDC_E_Acliente_Email,223,75,108,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_DTP_Acliente_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,223,111,107,15
+    LTEXT           "Fecha:",IDC_S_acliente_Fecha,194,113,24,8
+    LTEXT           "Información de Cliente:",IDC_S_ac_TituloNuevoCliente,155,5,81,8
+END
+
+IDD_D_AltaPromocion DIALOGEX 0, 0, 219, 136
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta de Nueva Promoción"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información de la Nueva Promoción",IDC_S_P_TituloNuevaPromo,7,6,122,8
+    LTEXT           "Nombre de la Promoción:",IDC_S_P_NombrePromo,9,25,87,8
+    LTEXT           "Monto para Promociones:",IDC_S_P_tMonto,8,43,89,8
+    LTEXT           "Porcentaje de Descuento:",IDC_S_P_PorcentajeDesc,6,62,90,8
+    RTEXT           "Estatus:",IDC_S_P_ActivaInactiva,35,79,60,8
+    EDITTEXT        IDC_E_NP_NombrePromo,101,24,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NP_Monto,101,42,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_NP_PorcentajeDesc,101,60,108,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Guardar",IDC_B_NP_Guardar,49,112,50,14
+    PUSHBUTTON      "Regresar",IDC_B_NP_Regresar,114,112,50,14
+    CONTROL         "Activa",IDC_NP_Activa,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,78,39,10
+    RTEXT           "Fecha:",IDC_S_P_Fecha,35,93,60,8
+    CONTROL         "",IDC_DTP_NPromociones,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,101,94,100,12
+END
+
+IDD_D_BajaPromocion DIALOGEX 0, 0, 351, 160
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Baja de Promoción"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_Pbaja_Lista,8,5,124,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Eliminar",IDC_B_BP_Eliminar,176,127,50,14
+    PUSHBUTTON      "Regresar",IDC_B_BP_Regresar,233,127,50,14
+    LTEXT           "Información Promoción Seleccionada:",IDC_S_P_TituloBPromo,139,18,129,8
+    LTEXT           "Nombre de la Promoción:",IDC_S_BP_NombrePromo,141,37,87,8
+    LTEXT           "Monto para Promociones:",IDC_S_BP_tMonto,140,55,89,8
+    LTEXT           "Porcentaje de Descuento:",IDC_S_BP_PorcentajeDesc,138,74,90,8
+    RTEXT           "Estatus:",IDC_S_BP_ActivaInactiva,167,91,60,8
+    EDITTEXT        IDC_E_BPromo_NombrePromo,233,36,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BPromo_Monto,233,54,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_BPromo_Descuento,233,72,108,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Activa",IDC_BC_Activa,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,233,90,39,10
+    RTEXT           "Fecha:",IDC_S_BP_Fecha,167,107,60,8
+    CONTROL         "",IDC_DTP_BPromociones,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,233,106,100,12
+END
+
+IDD_D_ListadoPromociones DIALOGEX 200, 0, 351, 166
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_P_Lista,8,8,124,149,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Eliminar",IDC_B_LP_Eliminar,205,130,50,14
+    PUSHBUTTON      "Regresar",IDC_B_LP_Regresar,262,130,50,14
+    LTEXT           "Información Promoción Seleccionada:",IDC_S_lP_TituloPromo,146,21,129,8
+    LTEXT           "Nombre de la Promoción:",IDC_S_LP_NombrePromo,141,40,87,8
+    LTEXT           "Monto para Promociones:",IDC_S_LP_tMonto,140,58,89,8
+    LTEXT           "Porcentaje de Descuento:",IDC_S_LP_PorcentajeDesc,138,77,90,8
+    RTEXT           "Estatus:",IDC_S_LP_ActivaInactiva,167,94,60,8
+    EDITTEXT        IDC_E_LPromo_NombrePromo,233,40,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LPromo_Monto,233,57,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LPromo_Descuento,233,75,108,12,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "Activa",IDC_LPromo_Activa,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,233,93,39,10
+    RTEXT           "Fecha:",IDC_S_LP_Fecha,167,110,60,8
+    CONTROL         "",IDC_DTP_LPromociones,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,233,109,100,12
+    PUSHBUTTON      "Actualizar",IDC_B_LP_Actualizar,148,130,50,14
+END
+
+IDD_D_ActualizarPromocion DIALOGEX 0, 0, 219, 136
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Actualizar Promoción"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    PUSHBUTTON      "Actualizar",IDC_B_AP_Actualizar,47,115,50,14
+    PUSHBUTTON      "Regresar",IDC_B_AP_Regresar,107,115,50,14
+    LTEXT           "Información de la Promoción Seleccionada:",IDC_S_AP_TituloBPromo,7,6,149,8
+    LTEXT           "Nombre de la Promoción:",IDC_S_AP_NombrePromo,9,25,87,8
+    LTEXT           "Monto para Promociones:",IDC_S_AP_tMonto,8,43,89,8
+    LTEXT           "Porcentaje de Descuento:",IDC_S_AP_PorcentajeDesc,6,62,90,8
+    RTEXT           "Estatus:",IDC_S_AP_ActivaInactiva,35,79,60,8
+    EDITTEXT        IDC_E_AP_NombrePromo,101,24,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AP_Monto,101,42,108,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_E_AP_PorcentajeDesc,101,60,108,12,ES_AUTOHSCROLL
+    CONTROL         "Activa",IDC_AP_Activa,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,78,39,10
+    RTEXT           "Fecha:",IDC_S_AP_Fecha,35,95,60,8
+    CONTROL         "",IDC_DTP_APromociones,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,101,94,100,12
+END
+
+IDD_D_AltaConsumos DIALOGEX 0, 0, 171, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Alta de Consumo"
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LTEXT           "Información del Nuevo Consumo:",IDC_S_AConsumo_Titulo,6,6,112,8
+    LTEXT           "Cliente:",IDC_S_AConsumo_Cliente,20,21,28,8
+    LTEXT           "Monto:",IDC_S_AConsumo_Monto,22,38,25,8
+    LTEXT           "Fecha:",IDC_S_AConsumo_Fecha,23,56,24,8
+    LTEXT           "Subtotal:",IDC_S_AConsumo_Subtotal,15,74,32,8
+    LTEXT           "Descuento:",IDC_S_AConsumo_Descuento,7,92,39,8
+    LTEXT           "Total:",IDC_S_AConsumo_Total,27,112,19,8
+    EDITTEXT        IDC_E_NConsumo_Subtotal,54,73,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_NConsumo_Descuento,54,91,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_NConsumo_Total,54,110,108,12,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_C_AConsumo_Clientes,54,20,108,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_E_NConsumo_Monto,54,37,108,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_DTP_NConsumo_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,54,55,108,12
+    PUSHBUTTON      "Guardar",IDC_B_NConsumo_Guardar,23,130,50,14
+    PUSHBUTTON      "Regresar",IDC_B_NConsumo_Regresar,88,130,50,14
+END
+
+IDD_D_ListadoConsumo DIALOGEX 200, 0, 297, 166
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 10, "Century Gothic", 400, 1, 0x0
+BEGIN
+    LISTBOX         IDC_LB_ListadoConsumo,6,6,120,150,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Información del Consumo Seleccionado:",IDC_S_AConsumo_Titulo,133,10,137,8
+    LTEXT           "Cliente:",IDC_S_LConsumo_Cliente,143,28,28,8
+    LTEXT           "Monto:",IDC_S_LConsumo_Monto,145,45,25,8
+    LTEXT           "Fecha:",IDC_S_LConsumo_Fecha,146,63,24,8
+    LTEXT           "Subtotal:",IDC_S_LConsumo_Subtotal,138,81,32,8
+    LTEXT           "Descuento:",IDC_S_LConsumo_Descuento,130,99,39,8
+    LTEXT           "Total:",IDC_S_LConsumo_Total,150,119,19,8
+    EDITTEXT        IDC_E_LConsumo_Subtotal,177,80,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LConsumo_Descuento,177,98,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LConsumo_Total,177,117,108,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_E_LConsumo_Monto,177,44,108,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    CONTROL         "",IDC_DTP_LConsumo_Fecha,"SysDateTimePick32",DTS_RIGHTALIGN | WS_TABSTOP,177,62,108,12
+    EDITTEXT        IDC_E_LConsumo_Cliente,177,26,108,12,ES_AUTOHSCROLL | ES_READONLY | ES_NUMBER
+    PUSHBUTTON      "Guardar",IDC_B_LConsumo_Guardar,150,138,50,14
+    PUSHBUTTON      "Regresar",IDC_B_LConsumo_Regresar,215,138,50,14
+END
+
+IDD_D_VPantallPrincipalCajeros DIALOGEX 0, 0, 567, 238
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "2. Pantalla Principal"
+FONT 10, "Century Gothic", 400, 0, 0x0
+BEGIN
+    GROUPBOX        "Información Disponible",IDC_SB_PPC_InformacionDIsponible,5,5,178,156
+    GROUPBOX        "Cantidad de clientes:",IDC_SB_VPPC_CantidadClientes,10,17,167,22
+    LTEXT           "Cantidad",IDC_S_VPPC_CantidadClientes,74,27,34,8
+    GROUPBOX        "Cantidad de promociones activas:",IDC_SB_VPPC_CantidadPromociones,9,45,168,22
+    LTEXT           "Cantidad",IDC_S_VPPC_CantidadPromociones,75,55,34,8
+    GROUPBOX        "Cantidad de promociones inactivas:",IDC_SB_VPPC_CantidadPromocionesInA,9,75,168,22
+    LTEXT           "Cantidad",IDC_S_VPPC_CantidadPromocionesInA,75,85,34,8
+    GROUPBOX        "Cantidad de consumos totales:",IDC_SB_VPPC_CantidadConsumos,9,105,168,22
+    GROUPBOX        "Monto total de consumo de todos los clientes:",IDC_SB_VPPC_CantidadConsumos2,9,135,168,22
+    LTEXT           "Cantidad",IDC_S_VPPC_CantidadConsumos,75,114,34,8
+    LTEXT           "Cantidad",IDC_S_VPPC_ConsumoTotal,75,144,34,8
+END
+
+IDD_Advertencia_Borrar DIALOGEX 0, 0, 195, 61
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advertencia"
+FONT 10, "Century Gothic", 700, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_Advertencia_B_Aceptar,43,37,50,14
+    PUSHBUTTON      "Cancelar",ID_Advertencia_B_Cancelar,98,37,50,14
+    LTEXT           "¿Está seguro de borrar el elemento seleccionado?",IDC_STATIC,13,12,167,12
+    LTEXT           "No se podrá recuperar la información",IDC_STATIC,36,25,125,10
+END
+
+IDD_Adevertencia_Exit DIALOGEX 0, 0, 181, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Advertencia"
+FONT 10, "Century Gothic", 700, 1, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Aceptar",ID_Advertencia_Exit_Aceptar,40,26,50,13
+    PUSHBUTTON      "Cancelar",ID_Advertencia_Exit_Cancelar,95,26,50,13
+    LTEXT           "¿Está seguro de dejar el programa?",IDC_STATIC,34,12,120,11
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_IS_CB_Comercio, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 214
+    END
+
+    IDD_D_RegistroAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+
+    IDD_D_VPantallaPrincipal, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 544
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_D_ActualizarUsuario, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 314
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_D_AltaAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_D_AltaCajero, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_D_ListadoAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 312
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 177
+    END
+
+    IDD_D_ListaCajeros, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 176
+    END
+
+    IDD_D_BajaAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_D_BajaCajero, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_D_ActualizarAdmin, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 360
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 157
+    END
+
+    IDD_D_ActualizarCajero, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 366
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_D_AltaCliente, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_D_BajaClientes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_D_ListaClientes, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 304
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_D_ActualizarCliente, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 332
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_D_AltaPromocion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_D_BajaPromocion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 153
+    END
+
+    IDD_D_ListadoPromociones, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 344
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_D_ActualizarPromocion, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_D_AltaConsumos, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 164
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_D_ListadoConsumo, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_D_VPantallPrincipalCajeros, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 560
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 231
+    END
+
+    IDD_Advertencia_Borrar, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 188
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_Adevertencia_Exit, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_IS_CB_Comercio AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_RegistroAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_VPantallaPrincipal AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ActualizarUsuario AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_AltaAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_AltaCajero AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ListadoAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ListaCajeros AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_BajaAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_BajaCajero AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ActualizarAdmin AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ActualizarCajero AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_AltaCliente AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_BajaClientes AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ListaClientes AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ActualizarCliente AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_AltaPromocion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_BajaPromocion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ListadoPromociones AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ActualizarPromocion AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_AltaConsumos AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_ListadoConsumo AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_D_VPantallPrincipalCajeros AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Advertencia_Borrar AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_Adevertencia_Exit AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MenuAdministradores MENU
+BEGIN
+    POPUP "Usuario"
+    BEGIN
+        MENUITEM "Actualizar Usuario",          ID_MA_U_ActualizarUsuario
+        MENUITEM "Cerrar Sesión",               ID_MA_U_CerrarSesion
+        MENUITEM "Salir",                       ID_MA_U_Salir
+    END
+    POPUP "Administradores"
+    BEGIN
+        MENUITEM "Alta de Administrador",       ID_MA_A_AltaAdmin
+        MENUITEM "Lista de Administradores",    ID_MA_A_ListaAdmins
+    END
+    POPUP "Cajeros"
+    BEGIN
+        MENUITEM "Alta de Cajeros",             ID_MA_C_AltaCajeros
+        MENUITEM "Lista de Cajeros",            ID_MA_C_ListaCajeros
+    END
+    POPUP "Clientes"
+    BEGIN
+        MENUITEM "Alta de Cliente",             ID_MA_c_AltaCliente
+        MENUITEM "Listado de Cliente",          ID_MA_c_ListaClientes
+    END
+    POPUP "Promociones"
+    BEGIN
+        MENUITEM "Alta de Promoción",           ID_MA_P_AltaPromo
+        MENUITEM "Baja de Promoción",           ID_MA_P_BajaPromo
+        MENUITEM "Listado de Promociones",      ID_MA_P_ListaPromos
+    END
+    POPUP "Consumos"
+    BEGIN
+        MENUITEM "Alta de Consumo",             ID_MA_Consumo_AltaConsumo
+        MENUITEM "Lista de Consumos",           ID_MA_Consumos_ListaConsumos
+    END
+END
+
+IDR_MenuCajeros MENU
+BEGIN
+    POPUP "Usuario"
+    BEGIN
+        MENUITEM "Actualizar Usuario",          ID_MC_U_ActualizarUsuario
+        MENUITEM "Cerrar Sesión",               ID_MC_U_CerrarSesion
+        MENUITEM "Salir",                       ID_MC_U_Salir
+    END
+    POPUP "Clientes"
+    BEGIN
+        MENUITEM "Alta de Clientes",            ID_MC_c_AltaClientes
+        MENUITEM "Listado de Clientes",         ID_MC_c_ListaClientes
+        MENUITEM "Actualizar Información de Clientes", ID_MC_c_ActualizarClientes
+    END
+    POPUP "Promociones"
+    BEGIN
+        MENUITEM "Listado de Promoción",        ID_MC_P_ListaPromos
+    END
+    POPUP "Consumo"
+    BEGIN
+        MENUITEM "Alta de Consumos",            ID_MC_Consumo_AltaConsumo
+        MENUITEM "Listado de Consumos",         ID_MC_Consumo_ListaConsumos
+    END
+END
+
+#endif    // Español (México) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
